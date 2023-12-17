@@ -3,8 +3,8 @@ import pickle as pk
 from flask import Flask, request, jsonify
 import numpy as np
 
-# Use absolute path to the model file
-model_path = os.path.abspath('C:\\Users\\Anik\\PycharmProjects\\ML\\models\\model')
+# Use os.path.join to create a path that works on both Windows and Heroku
+model_path = os.path.join('C:\\Users\\Anik\\PycharmProjects\\ML\\models', 'model')
 
 # Check if the file exists
 if not os.path.exists(model_path):
