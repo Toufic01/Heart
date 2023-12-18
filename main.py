@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 import numpy as np
 
 # Use os.path.join to create a path that works on both Windows and Heroku
-model_path = os.path.join('C:\\Users\\Anik\\PycharmProjects\\ML\\models', 'model')
+model_path = os.path.join('C:/Users/Anik/PycharmProjects/ML/models', 'model')
 
 # Check if the file exists
 if not os.path.exists(model_path):
